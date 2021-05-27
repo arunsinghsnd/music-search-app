@@ -1,6 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
-import "./style.css";
+import AppRouter from "./router/AppRouter";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+import { Provider } from "react-redux";
+import store from "./store/store";
+
+import "./style.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+ReactDOM.render(
+  <Provider store={store}>
+    <AppRouter />
+  </Provider>,
+  document.getElementById("root")
+);

@@ -5,7 +5,7 @@ import Header from "./Header";
 
 const Home = () => {
   return (
-    <div>
+    <div className="login">
       <Header />
       <Button variant="info" type="submit">
         Login to app
