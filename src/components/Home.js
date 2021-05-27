@@ -1,7 +1,18 @@
 import React from "react";
+//import { connect } from "react-redux";
+import { Button } from "react-bootstrap";
+import Header from "./Header";
 
 const Home = () => {
-  return <div>Home Page</div>;
+  return (
+    <div>
+      <Header />
+      <Button variant="info" type="submit">
+        Login to app
+      </Button>
+    </div>
+  );
 };
 
+//export default connect()(Home);
 export default Home;
